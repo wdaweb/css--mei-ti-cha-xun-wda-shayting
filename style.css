@@ -1,0 +1,307 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微軟正黑體";
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+img {
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.col {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #bbb;
+  width: 90%;
+}
+
+.col:last-child {
+  border: none;
+}
+/* 768 up */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .container {
+    position: relative;
+    max-width: 768px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100%;
+    flex-direction: row;
+  }
+  .col {
+    width: 20%;
+    border-bottom: none;
+    position: absolute;
+  }
+  .col img {
+    width: 65%;
+    z-index: 999;
+  }
+  .col .content {
+    display: none;
+  }
+  #wda {
+    width: 38%;
+    position: absolute;
+    z-index: 999;
+  }
+  #wda img {
+    width: 50%;
+  }
+  #html {
+    top: 18%;
+    left: 0;
+  }
+  #html::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -78%;
+    bottom: 22%;
+    transform: rotate(23deg);
+  }
+  #css {
+    top: 5%;
+    left: 13%;
+  }
+  #css ::before {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -30%;
+    bottom: 3%;
+    transform: rotate(50deg);
+  }
+  #bs {
+    top: 10%;
+    right: 10%;
+  }
+
+  #bs ::before {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 71%;
+    bottom: 5%;
+    transform: rotate(147deg);
+  }
+  #sass {
+    right: 2%;
+    top: 30%;
+  }
+
+  #sass ::before {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 90%;
+    bottom: 38%;
+    transform: rotate(173deg);
+  }
+  #vue {
+    right: 7%;
+    bottom: 25%;
+  }
+  #vue ::before {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 80%;
+    bottom: 100%;
+    transform: rotate(25deg);
+  }
+  #jq {
+    bottom: 11%;
+    left: 7%;
+  }
+
+  #jq ::before {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -50%;
+    bottom: 120%;
+    transform: rotate(-40deg);
+  }
+  #js {
+    left: 14px;
+    top: 40%;
+  }
+  #js ::before {
+    content: "";
+    width: 82%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -68%;
+    bottom: 50%;
+    transform: rotate(-16deg);
+  }
+}
+
+/* 1200 up */
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .container {
+    position: relative;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    flex-direction: row;
+  }
+  .col {
+    width: 20%;
+    border-bottom: none;
+    position: absolute;
+  }
+  .col img {
+    width: 60%;
+  }
+  .col .content {
+    display: none;
+  }
+  #wda {
+    width: 38%;
+    position: absolute;
+    z-index: 999;
+  }
+  #wda img {
+    width: 50%;
+  }
+  #html {
+    top: 2%;
+    left: 0;
+  }
+  #html::before {
+    content: "";
+    width: 120%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -90%;
+    bottom: 0px;
+    transform: rotate(15deg);
+  }
+  #css {
+    top: -15px;
+    left: 200px;
+  }
+  #css ::before {
+    content: "";
+    width: 55%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -20%;
+    bottom: 10%;
+    transform: rotate(40deg);
+  }
+  #bs {
+    top: 0;
+    right: 200px;
+  }
+
+  #bs ::before {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 70%;
+    bottom: 7%;
+    transform: rotate(140deg);
+  }
+  #sass {
+    right: 0;
+    top: 140px;
+  }
+
+  #sass ::before {
+    content: "";
+    width: 106%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 87%;
+    bottom: 32%;
+    transform: rotate(173deg);
+  }
+  #vue {
+    right: 10%;
+    bottom: 17%;
+  }
+  #vue ::before {
+    content: "";
+    width: 76%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: 81%;
+    bottom: 88%;
+    transform: rotate(20deg);
+  }
+  #jq {
+    top: 60%;
+    left: 15%;
+  }
+
+  #jq ::before {
+    content: "";
+    width: 55%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -31%;
+    bottom: 100%;
+    transform: rotate(-43deg);
+  }
+  #js {
+    left: 5%;
+    top: 35%;
+  }
+  #js ::before {
+    content: "";
+    width: 88%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    right: -68%;
+    bottom: 57%;
+    transform: rotate(-5deg);
+  }
+}

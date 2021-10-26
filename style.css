@@ -36,13 +36,19 @@ img {
 }
 /* 768 up */
 @media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     font-size: 1rem;
   }
   .container {
     position: relative;
     max-width: 768px;
-    height: 100vh;
+    height: 640px;
     margin: 0 auto;
     padding: 20px 0;
     width: 100%;
@@ -173,13 +179,19 @@ img {
 
 /* 1200 up */
 @media (min-width: 1200px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     font-size: 1rem;
   }
   .container {
     position: relative;
     max-width: 1200px;
-    height: 100vh;
+    height: 640px;
     margin: 0 auto;
     padding: 20px 0;
     flex-direction: row;
